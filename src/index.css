@@ -1,0 +1,57 @@
+/* Fuentes: script/cursiva amigable + display/cuerpo redondeado - deben ir primero */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+/* ============================================
+   PALETA: Azul pastel y crema
+   ============================================ */
+@theme {
+  --color-pastel-50: #f0f8fb;
+  --color-pastel-100: #e8f4f8;
+  --color-pastel-200: #d1e8f0;
+  --color-pastel-300: #b8d4e3;
+  --color-pastel-400: #7eb8d4;
+  --color-pastel-500: #5a9fc4;
+  --color-pastel-600: #3d7a9e;
+  --color-pastel-700: #2c4a5e;
+  --color-cream: #fafbfc;
+  --color-text-primary: #2c4a5e;
+  --color-text-muted: #5a9fc4;
+}
+
+:root {
+  font-family: 'Nunito', system-ui, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color: var(--color-text-primary);
+  background-color: var(--color-cream);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Script/cursiva amigable para títulos (Baby shower, Celebración, padres) */
+.font-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+/* Display para nombre del bebé y números (bold, legible) */
+.font-display {
+  font-family: 'Nunito', system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
